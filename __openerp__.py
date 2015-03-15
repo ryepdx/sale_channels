@@ -26,8 +26,8 @@
     'description': """Provides fields for specifying where sales came from and how they were paid for.""",
     'author': 'RyePDX LLC',
     'website': 'http://www.ryepdx.com',
-    'depends': ['sale', 'amazon_connector', 'website_sale'],
-    'data': [],
+    'depends': ['sale', 'amazon_connector', 'website_sale', 'commissions', 'reship_refund'],
+    'data': ['sale_view.xml'],
     'auto_install': False,
     'installable': True,
 }

@@ -2,11 +2,11 @@
 <openerp>
 	<data>
  	     <record model="ir.ui.view" id="sale_channels_sale_order_form">
-			<field name="name">hotp.sale.form.view.inherited</field>
+            <field name="name">sale.channels.sale.order.form</field>
 			<field name="model">sale.order</field>
-			<field name="inherit_id" ref="base_sale_multichannels.view_base_sale_payment_type_form"/>
+			<field name="inherit_id" ref="sale.view_order_form"/>
 			<field name="arch" type="xml">
-                <xpath expr="//field[@name='order_policy']" position="after">
+                <xpath expr="//field[@name='partner_shipping_id']" position="after">
                     <field name="input_channel" />
                     <field name="payment_channel" />
                 </xpath>
